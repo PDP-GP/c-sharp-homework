@@ -2,7 +2,7 @@
 
 namespace project
 {
-    class Task_1 //  №1.2  наибольшее и след по величине число из 10
+    class Task_1 //  №2.2  наибольшее и след по величине число из 10
     {
         static void Main()
         {
