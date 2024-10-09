@@ -4,7 +4,7 @@ namespace project
 {
     class Task_1 //  №2.2 про факториал и фибоначчи
     {
-        public static int fact_iterativno(int x)
+        public static int Fact_Iterative(int x)
         {
             if (x == 0)
             {
@@ -22,7 +22,7 @@ namespace project
             
         }
 
-        public static int fact_rekursivno(int x)
+        public static int FactRecursive(int x)
         {
             if (x == 0)
             {
@@ -30,11 +30,11 @@ namespace project
             }
             else
             {
-                return x * fact_rekursivno(x - 1);
+                return x * FactRecursive(x - 1);
             }
         }
 
-        public static int Fibonacci_iterativno(int n)
+        public static int FibonacciIterative(int n)
         {
             int a = 0;
             int b = 1;
@@ -47,11 +47,11 @@ namespace project
             return a;
         }
 
-        public static int Fibonacci_rekursivno(int n)
+        public static int FibonacciRekursive(int n)
         {
             if (n == 0 || n == 1) return n;
 
-            return Fibonacci_rekursivno(n - 1) + Fibonacci_rekursivno(n - 2);
+            return FibonacciRekursive(n - 1) + FibonacciRekursive(n - 2);
         }
 
         static void Main()
@@ -63,8 +63,8 @@ namespace project
                 Console.WriteLine("Your number is NOT an integer number");
             } else
             {
-                Console.WriteLine(x + "! = " + fact_iterativno(x) + " (iterative)");
-                Console.WriteLine(x + "! = " + fact_rekursivno(x) + " (recursive)");
+                Console.WriteLine(x + "! = " + Fact_Iterative(x) + " (iterative)");
+                Console.WriteLine(x + "! = " + FactRecursive(x) + " (recursive)");
             }
             Console.WriteLine("type a number of the Fibonacci sequence");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -73,8 +73,8 @@ namespace project
                 Console.WriteLine("Try to start at one or more");
             }
             else {
-                Console.WriteLine("Fibonacci: " + Fibonacci_iterativno(n) + " (iterative)");
-                Console.WriteLine("Fibonacci: " + Fibonacci_rekursivno(n) + " (recursive)");
+                Console.WriteLine("Fibonacci: " + FibonacciIterative(n) + " (iterative)");
+                Console.WriteLine("Fibonacci: " + FibonacciRekursive(n) + " (recursive)");
             }
             
 
