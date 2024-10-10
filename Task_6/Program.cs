@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace project
 {
@@ -9,7 +10,7 @@ namespace project
             PrintArray(array1);
             for (int i = 0; i < array1.Length; i++)
             {
-                for (int j = 0; j < array1.Length-1; j++)
+                for (int j = 0; j < array1.Length-1-i; j++)
                 {
                     if (array1[j] > array1[j + 1])
                     {
